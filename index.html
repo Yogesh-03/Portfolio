@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yogesh's Portfolio</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet"  href="style.css">
+</head>
+<body>
+    <header id="home">
+        <nav>
+            <div class="left"><span class="logoName">Portfolio</span></div>
+            <div class="right">
+                <ul id="sidemenu">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact me</a></li>
+                    <i class="fas fa-regular fa-circle-xmark" onclick="closeMenu()"></i>
+                </ul>
+                <i class="fas fa-solid fa-bars" onclick="openMenu()"></i>
+            </div>
+        </nav>
+    </header>
+    
+    <main>
+        <section class="firstSection">
+            <div class="leftSection">
+                Hi, <br> I'm <span class="customName">Yogesh Yadav</span>
+                <div>I am a <span id="element"></span> </div>
+                
+                <div class="download-resume"><a href="CV (4).pdf" download class="btn">Download CV</a></div>
+            </div>
+            <div class="rightSection">
+                <img src="developer.png" alt="">
+            </div>
+        </section>
+
+        <!-- ********** About ********* -->
+
+
+        <section class="aboutSection" id="about">
+            <div id="about">
+                <div class="container">
+                    <div class="row">
+                        <div class="about-col-1">
+                            <img src="myImage.png" alt="">
+                        </div>
+                        <div class="about-col-2">
+                            <h1 class ="sub-title">About me</h1>
+                            <p>I'm born and brought up in Bikaner, India. I'm currently pursuing BTech in Metallurgical and Materials Engineering from Indian Institute of Technology Jodhpur.</p>
+                            <div class="tab-titles">
+                                <p class="tab-links active-link" onclick="openTab('skills')">Skills</p>
+                                <p class="tab-links" onclick="openTab('experience')">Experience</p>
+                                <p class="tab-links" onclick="openTab('education')">Education</p>
+                            </div>
+
+                            <div class="tab-contents active-tab" id="skills">
+                                <ul>
+                                    <li><span>Languages</span><br>C++, Java, Kotlin, Javascript, SQL</li>
+                                    <li><span>Frameworks</span><br>Node.js, Express.js</li>
+                                    <li><span>Development</span><br>Android Development, Web Development</li>
+                                    <li><span>Tools</span><br>Git, Github, Firebase, REST API</li>
+                                </ul>
+                            </div>
+
+                            <div class="tab-contents" id="experience">
+                                <ul>
+                                    <li><span>Android development intern</span><br><strong>DevMan Pvt. Ltd.</strong></li>
+                                </ul>
+                            </div>
+
+                            <div class="tab-contents" id="education">
+                                <ul>
+                                    <li><span>Bachelor</span><br>IIT Jodhpur - Metallurgical and Materials Engineering. CGPA:7.14</li>
+                                    <li><span>High School</span><br>RBSE Board. 89.8%</li>
+                                    <li><span>Secondary</span><br>RBSE Board. 85.17%</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+
+        <!-- --- Projects -- -->
+
+        <section id="projects">
+            <div class="container">
+                <h1 class="sub-title">My Projects</h1>
+                <div class="project-list">
+                    <div class="work">
+                        <img src="sudoku.jpg" alt="">
+                        <div class="layer">
+                            <h3>Sudoku Mobile App</h3>
+                        <p>Built complete application based on MVVM architecture and Room database for local storage.Added 3 game helpers to enchance the game play.</p>
+                        <a href="https://github.com/Yogesh-03/SudokuApp/tree/master" target="_blank"><i class="fa-brands fa-github"></i></a>
+                        </div>
+                    </div>
+                    <div class="work">
+                        <img src="ecom.jpg" alt="">
+                        <div class="layer">
+                            <h3>E Commerce Application</h3>
+                        <p>Users can see all products of the shop according to his city(on the basis of PIN code) and can order them from shop of his choice. Facilitated smooth registration process and cart management with all products of shops.</p>
+                        <a href="https://github.com/Yogesh-03/e-Commerce_User_App" target="_blank"><i class="fa-brands fa-github"></i></a>
+                        </div>
+                    </div>
+                    <div class="work">
+                        <img src="photox.jpg" alt="">
+                        <div class="layer">
+                            <h3>E Commerce Application</h3>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quo eveniet, obcaecati quia sint, possimus tempore qui perspiciatis cupiditate ipsum recusandae repellat quae et, assumenda harum alias animi eaque illo blanditiis.</p>
+                        <a href="https://github.com/Yogesh-03/Inter_IIT-Image-App" target="_blank"><i class="fa-brands fa-github"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Me -->
+
+        <div id="contact">
+            <div class="container">
+                <div class="row">
+                    <div class="contact-left">
+                        <h1 class="sub-title">Contact Me</h1>
+                        <p><i class="fa-solid fa-paper-plane"></i>yadav.56@iitj.ac.in</p>
+                        <p><i class="fa-solid fa-phone"></i>+91 6377633629</p>
+                        <div class="social-icons">
+                            <a href="https://www.linkedin.com/in/yogesh-yadav-4a9777203/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                            <a href="https://github.com/Yogesh-03" target="_blank"><i class="fa-brands fa-github"></i></a>
+                        </div>
+                    </div>
+
+                    <div class="contact-right">
+                        <form name="submit-to-google-sheet">
+                            <input type="text" name="Name" placeholder="Your Name" required>
+                            <input type="email" name="Email" placeholder="Your Email" required>
+                            <textarea name="message" placeholder="Your message" cols="30" rows="10"></textarea>
+                            <button type="submit" class="btn btn2">Submit</button>
+                        </form>
+                        <span id="msg"></span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="copyright">
+                <p>Created by <span class="customName">Yogesh Yadav</span> | &copy; 2023 All rights reserved</p>
+            </div>
+        </div>
+
+    </main>
+
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script> 
+
+    <script>
+        var typed = new Typed('#element', {
+          strings: ['Android Developer', 'Web Developer'],
+          typeSpeed: 70,
+        });
+
+        var tabLinks = document.getElementsByClassName("tab-links");
+        var tabContents = document.getElementsByClassName("tab-contents")
+
+        function openTab(tabName){
+            for(tablink of tabLinks){
+                tablink.classList.remove("active-link")
+            }
+
+            for(tabcontent of tabContents){
+                tabcontent.classList.remove("active-tab")
+            }
+
+            event.currentTarget.classList.add("active-link")
+            document.getElementById(tabName).classList.add("active-tab")
+        }
+
+        var sidemenu = document.getElementById("sidemenu")
+
+        function openMenu(){
+            sidemenu.style.right = "0";
+        }
+
+        function closeMenu(){
+            sidemenu.style.right = "-200px";
+        }
+      </script>
+
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycby6GZmEiuZh8Y0Dd_sA_z-OUCL97M-KAGI7Niwnn9JkbDJ4N_s2cLWDQFRKdIhhhY8q/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg = document.getElementById('msg')
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            msg.innerHTML = "Message sent successfully"
+            setTimeout(function(){
+                msg.innerHTML = ""
+            }, 5000)
+            form.reset()
+        })
+    })
+  </script>
+    
+</body>
+</html>
