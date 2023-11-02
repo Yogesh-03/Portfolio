@@ -348,6 +348,22 @@ nav ul li a:hover{
     text-align: center;
 }
 
+.proj-icon{
+    display: inline-block;
+    margin-top: 20px;
+    color: #ff004f;
+    text-decoration: none;
+    font-size: 18px;
+    line-height: 60px;
+    background-color: #fff;
+    width: 60px;
+    height: 60px;
+    border-radius: 50px;
+    text-align: center;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
 
 /* ---- Contact me -----  */
 
@@ -522,5 +538,4 @@ nav .fas{
     color: #61b752;
     margin-top: 10px;
     display: block;
-
 }
