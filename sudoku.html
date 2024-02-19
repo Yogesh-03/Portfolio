@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sudoku application</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet"  href="style.css">
+</head>
+<body>
+
+    <header id="home">
+        <nav>
+           
+            <div class="left">
+                <span class="logoName">Sudoku app</span>
+            </div>
+            <div class="right">
+                <ul id="sidemenu">
+                    <li><a href="./index.html">Home</a></li>
+                    <li><a href="./index.html#about">About</a></li>
+                    <li><a href="./index.html#projects">Projects</a></li>
+                    <li><a href="./index.html#contact">Contact me</a></li>
+                    <i class="fas fa-regular fa-circle-xmark" onclick="closeMenu()"></i>
+                </ul>
+                <i class="fas fa-solid fa-bars" onclick="openMenu()"></i>
+            </div>
+        </nav>
+    </header>
+
+    <section class="aboutSection" id="about">
+        <div id="about">
+            <div class="container">
+                <div class="row">
+                    <div class="about-col-1">
+                        <img src="sudoku.jpg" alt="">
+                    </div>
+                    <div class="about-col-2">
+                        <h1 class ="sub-title">About project</h1>
+                        <p>Built a classic sudoku android application. It contains 4 difficulty levels- easy, medium, hard, expert. The difficulty level is based on the number of pre filled digits. For every level a new sudoku will be generated every time. It is available for both light and dark theme. All the game performance stats will be stored locally on our mobile database. It is deployed on play store having more than 10 downloads.</p>
+
+                        <div class="m-top-1">
+                            <span class="logoName">Tech Stack - </span> Kotlin, Firebase, XML, MVVM architecture
+                        </div>
+
+                        <p class="left m-top-1 logoName">Features</p>
+
+                        <div class="tab-contents active-tab">
+                            <ul>
+                                <li><span>4 difficulty levels - </span> easy, medium, hard and expert</li>
+                                <li><span>Theme - </span>available for both light and dark theme</li>
+                                <li><span>Pencil notes - </span>turn on/off pencil mode</li>
+                                <li><span>Highlighting - </span>highlight cells with same number, highlights row, column and block of selected cell.</li>
+                                <li><span>Auto Save - </span> pause and resume game or continue later</li>
+                                <li><span>Timer - </span> elapsed time is displayed and can control its visibility</li>
+                                <li><span>Undo - </span>added undo functionality.</li>
+                                <li><span>Mistakd limit - </span>turn on/off mistakes limit as you like. You will lose the game
+                                    on making three mistakes if mistake limit is on.</li>
+                            </ul>
+                        </div>
+                        <div class="download-resume">
+                            <a target="_blank" href="https://play.google.com/store/apps/details?id=com.gamopy.sudokugame" download class="btn">View on Play Store</a>
+                            <a target="_blank" class="btn" href="https://github.com/Yogesh-03/SudokuApp/tree/master">Github</a>
+                        </div>
+                
+                    
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="aboutSection" id="about">
+        <div id="about">
+            <div class="container">
+                <div class="row">
+                    
+                    <div class="about-col-2">
+
+                        <div class="m-top-1">
+                            
+                        </div>
+
+                        <p class="left m-top-1 logoName">Features</p>
+
+                        <div class="tab-contents active-tab">
+                            <ul>
+                                <li><span>Stats - </span> displays all the performance stats like game played, perfect wins, total wins and best time.</li>
+                                <li><span>Game history - </span>shows details of games completed earlier. Room database is used.</li>
+                                <li><span>Remaining numbers - </span>shows count of a digit Remaining.</li>
+                                <li><span>Highlighting - </span>cells with same digits are highlighted.</li>
+                                <li><span>Feedback - </span> feedback can be submitted and is stored on firebase firestore.</li>
+                                <li><span>Crashlytics - </span>integrated firebase Crashlytics to monitor app performance.</li>
+                                <li><span>Google AdMob - </span>integrated google adMob to show banner and rewarded ads.</li>
+                                <li><span>Hints - </span>one free hints is given after that one hint for watching ad.</li>
+                                
+                            </ul>
+                        </div>
+                       
+                
+                    
+                    </div>
+
+                    <div class="about-col-1">
+                        <img src="stats.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects">
+        <div class="container">
+            <h1 class="sub-title">Images</h1>
+            <div class="project-list">
+                <div class="work">
+                    <img src="sudoku.jpg" alt="">
+                    
+                </div>
+
+                
+                <div class="work">
+                    <img src="settings.jpg" alt="">
+                    
+                </div>
+
+                <div class="work">
+                    <img src="dark.jpg" alt="">
+                
+                </div>
+            </div>
+
+            
+
+            
+
+            
+
+        </div>
+    </section>
+
+
+    
+
+</body>
+</html>

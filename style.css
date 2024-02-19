@@ -13,7 +13,6 @@ html{
 }
 
 
-
 nav{
     display: flex;
     justify-content: space-around;
@@ -21,6 +20,7 @@ nav{
     flex-wrap: wrap;
     height: 90px;
     background-color: rgb(19, 19, 34);
+    
 
 }
 
@@ -74,12 +74,17 @@ nav ul li a:hover{
     padding: 15px 20px;
 }
 
-
+.backArrow{
+    font-size: 1.7rem;
+    font-weight: bold;
+}
 
 .left{
     font-size: 1.7rem;
     font-weight: bold;
+    
 }
+
 
 .logoName{
     color: #f81d4e;
@@ -175,7 +180,7 @@ nav ul li a:hover{
 /* ----- About ----- */
  
 #about{
-    padding: 80px 0px;
+    padding: 40px 0px;
 
 }
 
@@ -382,7 +387,7 @@ nav ul li a:hover{
     height: 100%;
 }
 
-.layer a{
+.layer >a{
     margin-top: 20px;
     color: #ff004f;
     text-decoration: none;
@@ -501,7 +506,7 @@ nav .fas{
     }
 }
 
-@media only screen and (max-width: 600px){
+@media only screen and (max-width: 650px){
     .rightSection img{
         width: 120%;
     }
@@ -585,4 +590,13 @@ nav .fas{
     color: #61b752;
     margin-top: 10px;
     display: block;
+}
+
+/* Style classes */
+.m-top-1{
+    margin-top: 15px;
+}
+
+.m-top-2{
+    margin-top: 20px;
 }
